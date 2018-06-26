@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Калькулятор</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="1.css">
+	<script src="1.jv"></script>
+</head>
+<body>
+	<div class="div">
+		<form name="calculator">
+		<input id="u" class="i" readonly type="textfield" name="ans" value="">		
+		<div class="e">
+			<input id="u" type="button" value="7" onClick="document.calculator.ans.value+='7'">
+			<input id="u" type="button" value="8" onClick="	document.calculator.ans.value+='8'">
+			<input id="u" type="button" value="9" onClick="document.calculator.ans.value+='9'">
+			<input id="u" type="button" value="/" onClick="document.calculator.ans.value+='/'">
+		</div>
+		<div class="r">
+			<input id="u" type="button" value="4" onClick="document.calculator.ans.value+='4'">
+			<input id="u" type="button" value="5" onClick="	document.calculator.ans.value+='5'">
+			<input id="u" type="button" value="6" onClick="document.calculator.ans.value+='6'">
+			<input id="u" type="button" value="*" onClick="document.calculator.ans.value+='*'">
+		</div>
+		<div class="t">
+			<input id="u" type="button" value="1" onClick="document.calculator.ans.value+='1'">
+			<input id="u" type="button" value="2" onClick="	document.calculator.ans.value+='2'">
+			<input id="u" type="button" value="3" onClick="document.calculator.ans.value+='3'">
+			<input id="u" type="button" value="+" onClick="document.calculator.ans.value+='+'">
+		</div>
+		<div class="y">
+			<input id="u" type="reset" value="С">
+			<input id="u" type="button" value="0" onClick="document.calculator.ans.value+='0'">
+			<input id="u" type="button"  value="=" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)">			
+			<input id="u" type="button" value="-" onClick="document.calculator.ans.value+='-'">
+		</div>
+		<div class="u">
+		</div>
+	</div>
+	</form>
+	<script>
+		
+	</script>
+</body>
+</html>
