@@ -3,13 +3,12 @@
 <head>
 	<title>HTML Калькулятор</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="../CSS/1.css">
-	<script src="1.jv"></script>
+	<link rel="stylesheet" type="text/css" href="../css/1.css">
 </head>
 <body>
 	<div class="div">
 		<form name="calculator">
-		<input id="u" class="i" readonly type="textfield" name="ans" value="">		
+		<input id="p" class="i" readonly type="textfield" name="ans" value="">		
 		<div class="e">
 			<input id="u" type="button" value="7" onClick="document.calculator.ans.value+='7'">
 			<input id="u" type="button" value="8" onClick="	document.calculator.ans.value+='8'">
@@ -34,12 +33,24 @@
 			<input id="u" type="button"  value="=" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)">			
 			<input id="u" type="button" value="-" onClick="document.calculator.ans.value+='-'">
 		</div>
+		<div>
+			<input id="u" type="button" value="(" onClick="document.calculator.ans.value+='('">
+			<input id="u" type="button" value="." onClick="document.calculator.ans.value+='.'">
+			<input id="u" type="button" value=")" onClick="document.calculator.ans.value+=')'">
+			<input id="u" id="x" type="button" value="√"
+			OnClick="sqrt ()">
+		</div>
 		<div class="u">
 		</div>
 	</div>
 	</form>
 	<script>
-		
+		let input=document.querySelector('#p');
+		function sqrt () {
+		p.value = Math.sqrt (p.value)
+		}
+
 	</script>
 </body>
 </html>
+
